@@ -36,6 +36,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
+    "normalize.scss": "^0.1.0",
     "stylelint": "^9.5.0",
     "stylelint-config-htmlacademy": "^0.1.1"
   }

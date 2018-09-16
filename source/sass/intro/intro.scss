@@ -1,0 +1,85 @@
+body {
+    background: url(../img/index-bg-1800.png) no-repeat center center ;
+    overflow: hidden;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 27%;
+    background-color: rgba(18, 38, 32, 0.6);
+    border-radius: 5px;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: 8%;
+
+        &_name {
+            margin-top: 25px;
+            margin-bottom: 0;
+            font-family: 'Sansus Webissimo' , sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #fff
+        }
+        &_subtitle {
+            margin-top: 2px;
+            color: #fff;
+            font-family: 'Sansus Webissimo' , sans-serif;
+            font-weight: lighter;
+            font-size: 1.5rem;
+        }
+        &_socials-wrapp {
+            margin-top: 20px;
+            margin-bottom: 40px;
+                a {
+                color: rgba(142, 156, 153, 1);
+                font-size: 30px;
+                transition: all 0.5s;
+                    &:hover {
+                        color: rgb(78, 136, 57);
+                    }
+                }
+                &intro_socials {
+                    &fa-github-alt {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                }
+        }
+        &_selfie {
+            border-radius: 50%;
+        }
+        &_links {
+            width: 100%;
+            display: inherit;
+            justify-content: space-between;
+            background-color: #629055;
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+                div {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 45px;
+                    padding-right: 45px;
+                    transition: all 0.5s;
+                        &:hover {
+                            background-color: rgb(73, 128, 57);
+                        }
+                }
+                a {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: #fff;
+                }
+                &__about {
+                   border-left: 2px solid rgba(222, 227, 231, 0.6);
+                   border-right: 2px solid rgba(222, 227, 231, 0.6);
+                }
+        }
+}
+
+.fa-github-alt {
+    padding-left: 25px;
+    padding-right: 25px;
+}

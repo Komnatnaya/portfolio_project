@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    ;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    line-height: 1.7;
+    font-weight: 500;
+    background-color: #2a2d3c;
+}
+
+a {
+    text-decoration: none;
+}
