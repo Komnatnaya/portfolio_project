@@ -1,5 +1,10 @@
-body {
-    background: url(../img/index-bg-1800.png) no-repeat center center ;
+.body-index {
+    background: url(../img/index-bg-1800.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -7,28 +12,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 27%;
+    max-width: 400px;
+    min-width: 200px;
     background-color: rgba(18, 38, 32, 0.6);
     border-radius: 5px;
     padding-top: 40px;
     margin: 0 auto;
     margin-top: 8%;
 
-        &_name {
-            margin-top: 25px;
-            margin-bottom: 0;
-            font-family: 'Sansus Webissimo' , sans-serif;
-            font-weight: bold;
-            font-size: 2.5rem;
-            color: #fff
-        }
-        &_subtitle {
-            margin-top: 2px;
-            color: #fff;
-            font-family: 'Sansus Webissimo' , sans-serif;
-            font-weight: lighter;
-            font-size: 1.5rem;
-        }
         &_socials-wrapp {
             margin-top: 20px;
             margin-bottom: 40px;
@@ -53,15 +44,15 @@ body {
         &_links {
             width: 100%;
             display: inherit;
-            justify-content: space-between;
             background-color: #629055;
             border-radius: 0 0 5px 5px;
-            overflow: hidden;
                 div {
                     padding-top: 15px;
                     padding-bottom: 15px;
                     padding-left: 45px;
                     padding-right: 45px;
+                    flex-grow: 1;
+                    text-align: center;
                     transition: all 0.5s;
                         &:hover {
                             background-color: rgb(73, 128, 57);

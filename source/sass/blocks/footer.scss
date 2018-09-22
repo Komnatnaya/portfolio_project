@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    background-color: rgba(85, 91, 94, 0.5);
+}
+
+.footer__wrapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer-text p{
+    max-width: 350px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    padding-left: 30px;
+    font-weight: 100;
+}
+
+.footer__citate p{
+    max-width: 350px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.2em;
+    padding-right: 20px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.footer__citate i {
+    font-weight: 600;
+}
+
+.footer__copyrights {
+    background-color: $strong-green;
+    text-align: center;
+}

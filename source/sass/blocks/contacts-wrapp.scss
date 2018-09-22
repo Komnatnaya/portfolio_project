@@ -1,0 +1,52 @@
+.contacts-wrapp {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 246, 242, 0.658);
+    margin: 0 auto;
+    width: 380px;
+}
+
+.contacts-wrapp__title {
+    position: relative;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: $light-grey;
+    font-family: 'Sansus-Webissimo' , sans-serif;
+    font-size: 3em;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.contacts-wrapp__title::before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: -50%;
+    width: 90px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-color: $light-grey;
+}
+
+.contacts-wrapp__icon {
+    display: block;
+    color: $light-grey;
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.contacts-wrapp__icon i{
+    color: $light-green;
+    font-size: 1.5em;
+    width: 25px;
+    height: 25px;
+}
+
+.contacts-wrapp__icon span {
+    padding-left: 10px;
+}
+
+.contacts-wrapp__icon {
+    padding-left: 40px;
+}

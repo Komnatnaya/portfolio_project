@@ -1,0 +1,103 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.about__first-block-wrapp {
+    width: 50%;
+    background-color: $primary-color;
+}
+
+.about__second-block-wrapp {
+    width: 50%;
+    background-color: $pimary-extra-color;
+}
+
+
+.about__caption {
+    position: relative;
+    color: #373e42;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5em;
+    background: url(../img/about_header.png) no-repeat center center ; 
+    margin-top: 0;
+}
+
+.about__caption::after,
+.about__subtitle::after {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: -20%;
+    width: 90px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-color: #373e42;
+}
+
+.about__subtitle {
+    position: relative;
+    color: $light-grey;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.about__caption,
+.about__subtitle,
+.about__skils-caption {
+    font-family: 'Sansus-Webissimo' , sans-serif;
+}
+
+.about__text {
+    max-width: 415px;
+    margin: 0 auto;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 20px;
+    color: $light-grey;
+    margin-bottom: 20px;
+}
+
+.about__frontend-skils,
+.about__backend-skils,
+.about__workflow-skils {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+
+.scill-circle {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.about__skils-caption {
+    text-transform: uppercase;
+    color: $light-grey;
+    font-size: 3.5em;
+    line-height: 50px;
+}
+
+.about_text-interests {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: $light-grey;
+    font-size: 1.2em;
+    font-family: 'Roboto' , sans-serif;
+    margin-bottom: 70px;
+}
+
+.about__name-of-activity {
+    font-family: 'Roboto' , sans-serif;
+    font-weight: medium;
+    font-size: 2.5em;
+    color: $light-grey;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 16%;
+}

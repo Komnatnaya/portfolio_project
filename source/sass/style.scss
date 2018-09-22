@@ -1,4 +1,15 @@
+@import "tools/normalize.css";
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
 @import "base.scss";
 @import "fonts";
-@import "intro/intro.scss";
+@import "colors";
+@import "blocks/intro.scss";
+@import "blocks/user-info.scss";
+@import "blocks/pre-info.scss";
+@import "blocks/header.scss";
+@import "blocks/poligons-block.scss";
+@import "blocks/about.scss";
+@import "blocks/maps-contact.scss";
+@import "blocks/contacts-wrapp.scss";
+@import "blocks/footer.scss";
 
