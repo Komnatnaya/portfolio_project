@@ -20,33 +20,37 @@
 .contacts-wrapp__title::before {
     content: "";
     position: absolute;
-    left: 25%;
-    bottom: -50%;
+    left: 50%;
+    bottom: -31px;
     width: 90px;
+    margin-left: -45px;
     height: 4px;
     background-repeat: no-repeat;
     background-color: $light-grey;
 }
 
 .contacts-wrapp__icon {
-    display: block;
+    position: relative;
     color: $light-grey;
     font-size: 1.5em;
     text-align: left;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    
 }
 
 .contacts-wrapp__icon i{
+    position: absolute;
     color: $light-green;
     font-size: 1.5em;
     width: 25px;
     height: 25px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .contacts-wrapp__icon span {
-    padding-left: 10px;
-}
-
-.contacts-wrapp__icon {
     padding-left: 40px;
 }
+

@@ -5,6 +5,20 @@
     text-align: center;
 }
 
+.about__triangle {
+    display: block;
+    width: 100%;
+    height: 6.875rem;
+}
+
+.about__triangle--left {
+    fill: $primary-color;
+}
+
+.about__triangle--right {
+    fill: $pimary-extra-color;
+}
+
 .about__first-block-wrapp {
     width: 50%;
     background-color: $primary-color;
@@ -80,6 +94,7 @@
     color: $light-grey;
     font-size: 3.5em;
     line-height: 50px;
+    margin-top: 14px;
 }
 
 .about_text-interests {
@@ -100,4 +115,8 @@
     margin-bottom: 0;
     text-align: left;
     margin-left: 16%;
+}
+
+.intro_socials-wrapp--about a{
+    color: #fff ;
 }

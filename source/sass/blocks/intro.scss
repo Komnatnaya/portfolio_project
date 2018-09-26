@@ -5,7 +5,6 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100px;
-    overflow: hidden;
 }
 
 .intro {
@@ -46,6 +45,7 @@
             display: inherit;
             background-color: #629055;
             border-radius: 0 0 5px 5px;
+            overflow: hidden;
                 div {
                     padding-top: 15px;
                     padding-bottom: 15px;
