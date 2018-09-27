@@ -87,6 +87,7 @@
 .scill-circle {
     width: 6.25rem;
     height: 6.25rem;
+    transform: rotate(-90deg);
 }
 
 .about__skils-caption {
@@ -154,5 +155,7 @@
     .about__backend-skils, 
     .about__workflow-skils {
         margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
