@@ -54,3 +54,10 @@
 .intro_socials-wrapp--footer a{
     color: #fff;
 }
+
+@media screen and (max-width: 767px) {
+    .footer__wrapp {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}

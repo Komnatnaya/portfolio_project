@@ -120,3 +120,39 @@
 .intro_socials-wrapp--about a{
     color: #fff ;
 }
+
+@media screen and (max-width: 767px) {
+    .about {
+        flex-direction: column;
+    }
+    .about__triangle--right {
+        fill: $primary-color;
+    }
+    .about__image {
+        width: 100%;
+    }
+    .about__caption {
+        margin-top: 20px;
+        padding-top: 40px;
+
+    }
+    .about__caption::after, 
+    .about__subtitle::after {
+        left: 50%;
+        bottom: -17px;
+        margin-left: -45px
+    }
+    .about__first-block-wrapp,
+    .about__second-block-wrapp {
+        width: 100%;
+    }
+
+    .about__name-of-activity {
+        margin-left: 5%;
+    }
+    .about__frontend-skils, 
+    .about__backend-skils, 
+    .about__workflow-skils {
+        margin-left: 0;
+    }
+}

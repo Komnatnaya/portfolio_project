@@ -5,7 +5,7 @@
 .user-info_name {
     margin-top: 25px;
     margin-bottom: 0;
-    font-family: 'Sansus Webissimo' , sans-serif;
+    font-family: 'Roboto-Regular' , sans-serif;
     font-weight: bold;
     font-size: 2.5rem;
     color: #fff
@@ -14,7 +14,19 @@
 .user-info_subtitle {
     margin-top: 2px;
     color: #fff;
-    font-family: 'Sansus Webissimo' , sans-serif;
-    font-weight: lighter;
+    font-family: 'Roboto-Regular' , sans-serif;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .user-info_name { 
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-bottom: 25px;
+        line-height: 1.2;
+    }
+
+    .user-info_subtitle {
+        font-weight: lighter;
+    }
 }
