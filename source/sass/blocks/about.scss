@@ -91,11 +91,24 @@
 }
 
 .about__skils-caption {
+    position: relative;
     text-transform: uppercase;
     color: $light-grey;
-    font-size: 3.5em;
+    font-size: 3em;
     line-height: 50px;
-    margin-top: 14px;
+    margin-top: 40px;
+}
+
+.about__skils-caption::before {
+    content: ""; 
+    position: absolute; 
+    left: 50%; 
+    bottom: -25px; 
+    width: 90px; 
+    margin-left: -45px; 
+    height: 4px; 
+    background-repeat: no-repeat; 
+    background-color: #566358;
 }
 
 .about_text-interests {
@@ -120,6 +133,11 @@
 
 .intro_socials-wrapp--about a{
     color: #fff ;
+}
+
+.intro_socials-wrapp--about {
+    margin-bottom: 0;
+    padding-top: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -149,7 +167,8 @@
     }
 
     .about__name-of-activity {
-        margin-left: 5%;
+        margin-left: 0;
+        text-align: center;
     }
     .about__frontend-skils, 
     .about__backend-skils, 
@@ -158,4 +177,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .about__text,
+    .about_text-interests,
+    .about__frontend-skils,
+    .about__backend-skils {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
