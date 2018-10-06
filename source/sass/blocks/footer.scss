@@ -17,6 +17,10 @@
     padding-top: 30px;
 }
 
+.footer-text {
+    width: 33.3%
+}
+
 .footer-text p{
     max-width: 350px;
     font-family: 'Roboto' , sans-serif;
@@ -97,7 +101,6 @@
         padding-bottom: 15px;
         margin-bottom: 0;
         max-width: 300px;
-        margin-left: 10px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -114,15 +117,15 @@
     .footer-text p{
         padding-left: 0;
         padding-bottom: 10px;
+        max-width: 260px;
+        margin: 0 auto;
+        font-size: 0.9em;
     }
 
-    .footer-text p,
-    .footer__citate p {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 
     .footer__citate p {
+        max-width: 280px;
+        padding-right: 0;
         font-style: italic;
         font-size: 0.9em;
         padding-top: 10px;
@@ -130,6 +133,7 @@
     }
     .footer__citate {
         width: 100%;
+        border-left: none;
     }
 
     .intro_socials-wrapp--footer {
@@ -138,7 +142,7 @@
     }
 
     .footer__copyrights p {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 
     .footer__copyrights {

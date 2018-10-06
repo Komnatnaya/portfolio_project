@@ -12,6 +12,7 @@
     width: 380px;
 }
 
+
 .contacts-wrapp__title {
     position: relative;
     margin: 0 auto;
@@ -58,6 +59,10 @@
 
 .contacts-wrapp__icon span {
     padding-left: 40px;
+}
+
+.contacts-wrapp a:last-child {
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 767px)  {
