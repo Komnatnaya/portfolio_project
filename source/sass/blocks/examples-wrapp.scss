@@ -1,0 +1,20 @@
+.examples-wrapp {
+    display: flex;
+    flex-direction: row;
+    background-color: $primary-color;
+}
+
+.examples-wrapp__descriptions,
+.examples-wrapp__images {
+    width: 50%;
+}
+
+.examples-wrapp__descriptions {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.examples-wrapp__descriptions--wrapp {
+    max-width: 330px;
+    margin: 0 auto;
+}
