@@ -146,12 +146,17 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1450px) and (min-width: 768px)  {
     .examples-wrapp__descriptions {
         padding-top: 40px;
         padding-bottom: 0;
     }
 }
+
+
+
+
+
 
 
 
