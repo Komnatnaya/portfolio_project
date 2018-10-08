@@ -1,0 +1,205 @@
+.reviews {
+    background-color: rgb(244, 245, 240);
+    padding-top: 70px;
+    padding-bottom: 150px;
+    background: url(../img/reviews-bg.png) no-repeat center center ; 
+    background-size: cover;
+    margin-bottom: -200px;
+    padding-bottom: 300px;
+}
+
+
+
+.reviews__wrapp__comments-wrapp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+ 
+}
+
+.reviews__wrapp__comment {
+    text-align: center;
+}
+
+.reviews__wrapp__text {
+    font-family: 'Roboto' , sans-serif;
+    color: rgb(93, 90, 85);
+    font-size: 1.2em;
+    line-height: 26px;
+    text-align: left;
+    font-style: italic;
+
+}
+
+.reviews__wrapp {
+    max-width:  800px;
+    margin: 0 auto;
+}
+
+.reviews__wrapp--caption {
+    font-size: 4.7em;
+    line-height: 67px;
+    padding-top: 10px;
+}
+
+.reviews__wrapp__author-coment span {
+    display: block;
+}
+
+.reviews__wrapp__author-coment span:first-child {
+    font-family: 'Roboto' , sans-serif;
+    color: $strong-green;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.reviews__wrapp__author-coment span:last-child {
+    font-family: 'Roboto' , sans-serif;
+    color: rgb(55, 62, 66);
+    font-size: 1.2em;
+}
+
+.reviews__form {
+    position: relative;
+    max-width: 385px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.reviews__form-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.reviews__form-caption {
+    font-size: 4.5em;
+    background: none;
+}
+
+.reviews__form-caption::after {
+    left: 40%;
+    bottom: 0;
+}
+
+.reviews__form-content input,
+.reviews__form-content textarea{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.2em;
+    color: rgba(93, 90, 85, 0.5);
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.reviews__form-content input::-webkit-input-placeholder
+.reviews__form-content input::-webkit-textarea-placeholder {
+    color: rgba(93, 90, 85, 0.5);
+}
+
+.reviews__form__form-actions {
+    display: flex;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+
+.reviews__form__form-actions button{
+    width: 50%;
+    border: none;
+    background-color: $light-green;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-family: 'Roboto' , sans-serif;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.reviews__form__form-actions button:hover {
+    background-color: $strong-green;
+}
+
+
+.reviews__form__form-actions button:first-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.reviews__form__form-actions button:last-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.reviews__chevron-up {
+    position: relative;
+    width: 80px;
+    height: 35px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
+.reviews__chevron-up::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 35px;
+    background: url(../img/chevron-up-solid.svg) no-repeat center center;
+}
+
+
+.reviews__form-wrapp {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .reviews {
+        background: url(../img/reviews-bg-iphone.png) no-repeat center center;
+        background-size: cover;
+        margin-bottom: -10px;
+        padding-bottom: 350px;
+    }
+    .reviews__wrapp--caption {
+        font-size: 2.7em;
+        line-height: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .reviews__wrapp__comments-wrapp {
+        flex-direction: column;
+    }
+
+    .reviews__wrapp__text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .reviews__wrapp__comment {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .reviews__wrapp__text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+

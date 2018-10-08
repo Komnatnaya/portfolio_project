@@ -25,6 +25,10 @@
 }
 
 .about__second-block-wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px;
     width: 50%;
     background-color: $pimary-extra-color;
 }
@@ -76,6 +80,10 @@
     margin-bottom: 20px;
 }
 
+.about__text--margin {
+    margin-bottom: 120px;
+}
+
 .about__frontend-skils,
 .about__backend-skils,
 .about__workflow-skils {
@@ -85,17 +93,30 @@
 }
 
 .scill-circle {
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 6.8rem;
+    height: 6.8rem;
     transform: rotate(-90deg);
 }
 
 .about__skils-caption {
+    position: relative;
     text-transform: uppercase;
     color: $light-grey;
-    font-size: 3.5em;
+    font-size: 3em;
     line-height: 50px;
-    margin-top: 14px;
+    margin-top: 25px;
+}
+
+.about__skils-caption::before {
+    content: ""; 
+    position: absolute; 
+    left: 50%; 
+    bottom: -25px; 
+    width: 90px; 
+    margin-left: -45px; 
+    height: 4px; 
+    background-repeat: no-repeat; 
+    background-color: #566358;
 }
 
 .about_text-interests {
@@ -122,6 +143,11 @@
     color: #fff ;
 }
 
+.intro_socials-wrapp--about {
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
 @media screen and (max-width: 767px) {
     .about {
         flex-direction: column;
@@ -140,7 +166,6 @@
     .about__caption::after, 
     .about__subtitle::after {
         left: 50%;
-        bottom: -17px;
         margin-left: -45px
     }
     .about__first-block-wrapp,
@@ -149,7 +174,8 @@
     }
 
     .about__name-of-activity {
-        margin-left: 5%;
+        margin-left: 0;
+        text-align: center;
     }
     .about__frontend-skils, 
     .about__backend-skils, 
@@ -157,5 +183,27 @@
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .about__text,
+    .about_text-interests,
+    .about__frontend-skils,
+    .about__backend-skils {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .about__text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about__text {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

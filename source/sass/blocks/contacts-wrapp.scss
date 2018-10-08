@@ -1,10 +1,17 @@
 .contacts-wrapp {
+    
+    z-index: 10;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    background-color: rgba(246, 246, 242, 0.658);
+    background-color: rgba(246, 246, 242, 0.9);
     margin: 0 auto;
     width: 380px;
 }
+
 
 .contacts-wrapp__title {
     position: relative;
@@ -12,7 +19,7 @@
     text-transform: uppercase;
     color: $light-grey;
     font-family: 'Sansus-Webissimo' , sans-serif;
-    font-size: 3em;
+    font-size: 2.3em;
     margin-bottom: 70px;
     margin-top: 20px;
 }
@@ -32,7 +39,7 @@
 .contacts-wrapp__icon {
     position: relative;
     color: $light-grey;
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-align: left;
     margin-bottom: 20px;
     margin-left: 40px;
@@ -54,9 +61,13 @@
     padding-left: 40px;
 }
 
+.contacts-wrapp a:last-child {
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 767px)  {
     .contacts-wrapp {
-        width: 100%;
+        width: 90%;
     }
 }
 

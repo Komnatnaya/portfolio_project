@@ -1,0 +1,162 @@
+.examples-wrapp {
+    display: flex;
+    flex-direction: row;
+    background-color: $primary-color;
+}
+
+.examples-wrapp__descriptions,
+.examples-wrapp__images {
+    width: 50%;
+}
+
+.examples-wrapp__descriptions {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.examples-wrapp__descriptions--wrapp {
+    max-width: 330px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.examples-wrapp__descriptions--wrapp h2 {
+    position: relative;
+    font-family: 'Sansus-Webissimo' , sans-serif;
+    color: $light-grey;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 60px;
+}
+
+.examples-wrapp__descriptions--wrapp h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -31px;
+    width: 90px;
+    margin-left: -45px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-color: $light-grey;
+}
+
+.examples-wrapp__descriptions--wrapp span {
+    color: $strong-green;
+
+}
+
+.examples-wrapp__descriptions--wrapp button {
+    display: block;
+    background-color: rgb(108, 156, 90);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.fa-link {
+    margin-right: 10px;
+}
+
+.examples-wrapp__images {
+    background-color: rgb(225, 228, 215);
+}
+
+.examples-wrapp__images-main img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+}
+
+.examples-wrapp__images-secondary {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.examples-wrapp__images-secondary__first-work,
+.examples-wrapp__images-secondary__second-work {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.examples-wrapp__images-secondary__first-work img{
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}
+
+.examples-wrapp__images-secondary__second-work img{
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}
+
+.examples-wrapp__images-secondary__first-work::before,
+.examples-wrapp__images-secondary__second-work::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(176, 183, 170, 0.7);
+}
+
+.examples-wrapp__images-secondary__first-work::after,
+.examples-wrapp__images-secondary__second-work::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 30px;  
+    
+}
+
+.examples-wrapp__images-secondary__first-work::after {
+    background: url(../img/chevron-up-solid.svg) no-repeat center center ;
+}
+
+.examples-wrapp__images-secondary__second-work::after {
+    background: url(../img/chevron-down-solid.svg) no-repeat center center ;
+}
+
+
+@media screen and (max-width: 767px) {
+    .examples-wrapp {
+        flex-direction: column;
+    }
+    .examples-wrapp__descriptions,
+    .examples-wrapp__images {
+        width: 100%;
+    }
+    .examples-wrapp__images-main img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1450px) and (min-width: 768px)  {
+    .examples-wrapp__descriptions {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
