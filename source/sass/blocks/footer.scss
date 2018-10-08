@@ -84,6 +84,11 @@
     max-height: 90px;
 }
 
+
+.footer--works {
+    margin-top: 0;
+}
+
 @media screen and (max-width: 767px) {
     .footer__wrapp {
         flex-direction: column;
